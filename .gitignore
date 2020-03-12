@@ -1,0 +1,17 @@
+# OSX
+#
+
+# Xcode
+#
+build/
+
+
+# Android/IntelliJ
+#
+build/
+
+# node.js
+#
+node_modules/
+
+.scannerwork

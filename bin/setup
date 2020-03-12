@@ -1,0 +1,108 @@
+
+
+
+
+if [[ ! "$OSTYPE" =~ ^darwin ]]; then
+  echo "This script only works on macOS"
+  exit 1
+fi
+
+
+command -v brew >/dev/null 2>&1 || {
+  echo "This setup script requires Homebrew, but it was not found on your system."
+  echo "Install it using the instructions at https://brew.sh/"
+  exit 1
+}
+
+
+command -v pod >/dev/null 2>&1 || {
+  echo "This app requires CocoaPods to run, but it was not found on your system."
+  echo "Install it using the instructions at https://guides.cocoapods.org/using/getting-started.html#installation"
+  exit 1
+}
+
+
+command -v npm >/dev/null 2>&1 || {
+  echo "This app requires Node.js to run, but it was not found on your system."
+  echo "Installing node with brew..."
+  brew install node
+}
+
+
+command -v watchman >/dev/null 2>&1 || {
+  echo "This app requires Watchman to watch file changes, but it was not found on your system."
+  echo "Installing watchman with brew..."
+  brew install watchman
+}
+
+
+command -v yarn >/dev/null 2>&1 || {
+  echo "This app requires Yarn package manager, but it was not found on your system."
+  echo "Installing yarn with brew..."
+  brew install yarn
+}
+
+
+command -v react-native >/dev/null 2>&1 || {
+  echo "This app requires react-native-cli, but it was not found on your system."
+  echo "Installing react-native-cli globally with yarn..."
+  yarn global add react-native-cli
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+echo "----------------------------------------------------------"
+echo "Installing NPM Packages with Yarn"
+echo "----------------------------------------------------------"
+
+yarn || { echo "NPM Packages could not be installed!"; exit 1; };
+
+echo "----------------------------------------------------------"
+echo "Installing CocoaPods"
+echo "----------------------------------------------------------"
+
+cd ios/ && {
+  pod install || { echo "CocoaPods could not be installed!"; exit 1; };
+  cd -
+}
+
+
+
+
+
+
+
+
+echo "----------------------------------------------------------"
+echo "Running tests to verify setup is complete"
+echo "----------------------------------------------------------"
+
+yarn test || { exit 1; }
+
+echo "----------------------------------------------------------"
+echo "Setup complete!"
+echo "----------------------------------------------------------"
+
+echo "To run the app on iOS:"
+echo "react-native run-ios"

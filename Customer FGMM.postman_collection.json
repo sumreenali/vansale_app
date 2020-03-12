@@ -1,0 +1,614 @@
+{
+  "info": {
+    "_postman_id": "f17e82dd-4b22-49cc-ae65-cb48ae9feff1",
+    "name": "Customer FGMM",
+    "description": "Customer FGMM",
+    "schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+  },
+  "item": [
+    {
+      "name": "Customers-5",
+      "item": [
+        {
+          "name": "login",
+          "request": {
+            "method": "POST",
+            "header": [],
+            "url": {
+              "raw": "https://fgmmdev.com/api/v1/login?email=ars.cutomer@fgmm.com&password=12345678",
+              "protocol": "https",
+              "host": ["fgmmdev", "com"],
+              "path": ["api", "v1", "login"],
+              "query": [
+                {
+                  "key": "email",
+                  "value": "ars.cutomer@fgmm.com"
+                },
+                {
+                  "key": "password",
+                  "value": "12345678"
+                }
+              ]
+            },
+            "description": "login here"
+          },
+          "response": []
+        },
+        {
+          "name": "edit",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVkZWEyYzcxNjY2ZTU4YjYzNTRmZmVhMjc0MWE0MjhhYjYyZDk5NTk2MmNmNDc2ODQ1NTM0MjY1MWQ3OTc3NmVkMTFmYmZlNTZiZmRhY2ViIn0.eyJhdWQiOiIxIiwianRpIjoiNWRlYTJjNzE2NjZlNThiNjM1NGZmZWEyNzQxYTQyOGFiNjJkOTk1OTYyY2Y0NzY4NDU1MzQyNjUxZDc5Nzc2ZWQxMWZiZmU1NmJmZGFjZWIiLCJpYXQiOjE1NzA3MDkxMDMsIm5iZiI6MTU3MDcwOTEwMywiZXhwIjoxNjAyMzMxNTAzLCJzdWIiOiIyNzgiLCJzY29wZXMiOltdfQ.eKyAGPlS0dBEm5cZa2O_ANZZF1j18o3k_zcBm8kTQlsih9N64pG8PA5Aget9SDs0JnmMVLu1VEmiVnpAzDkM0-rEUfrCI9nIHuMIRWwQC_EqV0k5LAlBOPGJ8E3GxUDeuFtwEPTD9Ih_J9VXaYwEBWOHWG1JeUkurpmImBGD_1oktvwcOBkByGyCMqidGhNimbVnTFJ884QDeA751Yqg7LakNMVZi0k5y4uMNXrQbZLRuzZY9DNArpp9WnsvKTLtBQ3QAvYtNQlI-F3rzY1wVFbyI2vkjSbTV4zACM4zAInyg41ejETL3EcSSzvnYU0H4HE6g694dzbSEw6RvoUBXrS9Q3gexfVAH2Mp1HIkqF0CYD_A8WHaSyjupIr1x_vGr-gCInwqXAq5MJKALrHyHuwWaC7nG1dsFxYoCkBULcZ1UA4fYN6YK64kA3s3jsFPDFiHwxj9aFZVmgpfV9W4CMmtjv0BtCDZ-7SG81Du_byChtaKnwk5J0EF9toh-pPjOCflY7Es8orLYxMxqTtwIviS7ju1cZjm_Om2gGhzIbq7TgRL9VVUis2rgsbbuhtoZbjUBb-Q-RVNkL_YzQPOVFVSsnGeeBqXaMPD11qQ0mNiQ0s-eT1gEt4UaWuuxSx5ra2I0F8JbfI_YJ55_gaWyvBUhFRGoLepJ8jBCDsf8Po",
+                "type": "text"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\n\t\"id\":263\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://fgmmdev.com/api/v1/customer/edit",
+              "protocol": "https",
+              "host": ["fgmmdev", "com"],
+              "path": ["api", "v1", "customer", "edit"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "customer purchase-invoices",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVkZWEyYzcxNjY2ZTU4YjYzNTRmZmVhMjc0MWE0MjhhYjYyZDk5NTk2MmNmNDc2ODQ1NTM0MjY1MWQ3OTc3NmVkMTFmYmZlNTZiZmRhY2ViIn0.eyJhdWQiOiIxIiwianRpIjoiNWRlYTJjNzE2NjZlNThiNjM1NGZmZWEyNzQxYTQyOGFiNjJkOTk1OTYyY2Y0NzY4NDU1MzQyNjUxZDc5Nzc2ZWQxMWZiZmU1NmJmZGFjZWIiLCJpYXQiOjE1NzA3MDkxMDMsIm5iZiI6MTU3MDcwOTEwMywiZXhwIjoxNjAyMzMxNTAzLCJzdWIiOiIyNzgiLCJzY29wZXMiOltdfQ.eKyAGPlS0dBEm5cZa2O_ANZZF1j18o3k_zcBm8kTQlsih9N64pG8PA5Aget9SDs0JnmMVLu1VEmiVnpAzDkM0-rEUfrCI9nIHuMIRWwQC_EqV0k5LAlBOPGJ8E3GxUDeuFtwEPTD9Ih_J9VXaYwEBWOHWG1JeUkurpmImBGD_1oktvwcOBkByGyCMqidGhNimbVnTFJ884QDeA751Yqg7LakNMVZi0k5y4uMNXrQbZLRuzZY9DNArpp9WnsvKTLtBQ3QAvYtNQlI-F3rzY1wVFbyI2vkjSbTV4zACM4zAInyg41ejETL3EcSSzvnYU0H4HE6g694dzbSEw6RvoUBXrS9Q3gexfVAH2Mp1HIkqF0CYD_A8WHaSyjupIr1x_vGr-gCInwqXAq5MJKALrHyHuwWaC7nG1dsFxYoCkBULcZ1UA4fYN6YK64kA3s3jsFPDFiHwxj9aFZVmgpfV9W4CMmtjv0BtCDZ-7SG81Du_byChtaKnwk5J0EF9toh-pPjOCflY7Es8orLYxMxqTtwIviS7ju1cZjm_Om2gGhzIbq7TgRL9VVUis2rgsbbuhtoZbjUBb-Q-RVNkL_YzQPOVFVSsnGeeBqXaMPD11qQ0mNiQ0s-eT1gEt4UaWuuxSx5ra2I0F8JbfI_YJ55_gaWyvBUhFRGoLepJ8jBCDsf8Po"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"customer_id\" :263\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://fgmmdev.com/api/v1/customer/purchase-invoices",
+              "protocol": "https",
+              "host": ["fgmmdev", "com"],
+              "path": ["api", "v1", "customer", "purchase-invoices"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "freezers",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVkZWEyYzcxNjY2ZTU4YjYzNTRmZmVhMjc0MWE0MjhhYjYyZDk5NTk2MmNmNDc2ODQ1NTM0MjY1MWQ3OTc3NmVkMTFmYmZlNTZiZmRhY2ViIn0.eyJhdWQiOiIxIiwianRpIjoiNWRlYTJjNzE2NjZlNThiNjM1NGZmZWEyNzQxYTQyOGFiNjJkOTk1OTYyY2Y0NzY4NDU1MzQyNjUxZDc5Nzc2ZWQxMWZiZmU1NmJmZGFjZWIiLCJpYXQiOjE1NzA3MDkxMDMsIm5iZiI6MTU3MDcwOTEwMywiZXhwIjoxNjAyMzMxNTAzLCJzdWIiOiIyNzgiLCJzY29wZXMiOltdfQ.eKyAGPlS0dBEm5cZa2O_ANZZF1j18o3k_zcBm8kTQlsih9N64pG8PA5Aget9SDs0JnmMVLu1VEmiVnpAzDkM0-rEUfrCI9nIHuMIRWwQC_EqV0k5LAlBOPGJ8E3GxUDeuFtwEPTD9Ih_J9VXaYwEBWOHWG1JeUkurpmImBGD_1oktvwcOBkByGyCMqidGhNimbVnTFJ884QDeA751Yqg7LakNMVZi0k5y4uMNXrQbZLRuzZY9DNArpp9WnsvKTLtBQ3QAvYtNQlI-F3rzY1wVFbyI2vkjSbTV4zACM4zAInyg41ejETL3EcSSzvnYU0H4HE6g694dzbSEw6RvoUBXrS9Q3gexfVAH2Mp1HIkqF0CYD_A8WHaSyjupIr1x_vGr-gCInwqXAq5MJKALrHyHuwWaC7nG1dsFxYoCkBULcZ1UA4fYN6YK64kA3s3jsFPDFiHwxj9aFZVmgpfV9W4CMmtjv0BtCDZ-7SG81Du_byChtaKnwk5J0EF9toh-pPjOCflY7Es8orLYxMxqTtwIviS7ju1cZjm_Om2gGhzIbq7TgRL9VVUis2rgsbbuhtoZbjUBb-Q-RVNkL_YzQPOVFVSsnGeeBqXaMPD11qQ0mNiQ0s-eT1gEt4UaWuuxSx5ra2I0F8JbfI_YJ55_gaWyvBUhFRGoLepJ8jBCDsf8Po"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://fgmmdev.com/api/v1/freezer/serials",
+              "protocol": "https",
+              "host": ["fgmmdev", "com"],
+              "path": ["api", "v1", "freezer", "serials"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Customer balances",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVkZWEyYzcxNjY2ZTU4YjYzNTRmZmVhMjc0MWE0MjhhYjYyZDk5NTk2MmNmNDc2ODQ1NTM0MjY1MWQ3OTc3NmVkMTFmYmZlNTZiZmRhY2ViIn0.eyJhdWQiOiIxIiwianRpIjoiNWRlYTJjNzE2NjZlNThiNjM1NGZmZWEyNzQxYTQyOGFiNjJkOTk1OTYyY2Y0NzY4NDU1MzQyNjUxZDc5Nzc2ZWQxMWZiZmU1NmJmZGFjZWIiLCJpYXQiOjE1NzA3MDkxMDMsIm5iZiI6MTU3MDcwOTEwMywiZXhwIjoxNjAyMzMxNTAzLCJzdWIiOiIyNzgiLCJzY29wZXMiOltdfQ.eKyAGPlS0dBEm5cZa2O_ANZZF1j18o3k_zcBm8kTQlsih9N64pG8PA5Aget9SDs0JnmMVLu1VEmiVnpAzDkM0-rEUfrCI9nIHuMIRWwQC_EqV0k5LAlBOPGJ8E3GxUDeuFtwEPTD9Ih_J9VXaYwEBWOHWG1JeUkurpmImBGD_1oktvwcOBkByGyCMqidGhNimbVnTFJ884QDeA751Yqg7LakNMVZi0k5y4uMNXrQbZLRuzZY9DNArpp9WnsvKTLtBQ3QAvYtNQlI-F3rzY1wVFbyI2vkjSbTV4zACM4zAInyg41ejETL3EcSSzvnYU0H4HE6g694dzbSEw6RvoUBXrS9Q3gexfVAH2Mp1HIkqF0CYD_A8WHaSyjupIr1x_vGr-gCInwqXAq5MJKALrHyHuwWaC7nG1dsFxYoCkBULcZ1UA4fYN6YK64kA3s3jsFPDFiHwxj9aFZVmgpfV9W4CMmtjv0BtCDZ-7SG81Du_byChtaKnwk5J0EF9toh-pPjOCflY7Es8orLYxMxqTtwIviS7ju1cZjm_Om2gGhzIbq7TgRL9VVUis2rgsbbuhtoZbjUBb-Q-RVNkL_YzQPOVFVSsnGeeBqXaMPD11qQ0mNiQ0s-eT1gEt4UaWuuxSx5ra2I0F8JbfI_YJ55_gaWyvBUhFRGoLepJ8jBCDsf8Po"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://fgmmdev.com/api/v1/customer/balances",
+              "protocol": "https",
+              "host": ["fgmmdev", "com"],
+              "path": ["api", "v1", "customer", "balances"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Customer freezers",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVkZWEyYzcxNjY2ZTU4YjYzNTRmZmVhMjc0MWE0MjhhYjYyZDk5NTk2MmNmNDc2ODQ1NTM0MjY1MWQ3OTc3NmVkMTFmYmZlNTZiZmRhY2ViIn0.eyJhdWQiOiIxIiwianRpIjoiNWRlYTJjNzE2NjZlNThiNjM1NGZmZWEyNzQxYTQyOGFiNjJkOTk1OTYyY2Y0NzY4NDU1MzQyNjUxZDc5Nzc2ZWQxMWZiZmU1NmJmZGFjZWIiLCJpYXQiOjE1NzA3MDkxMDMsIm5iZiI6MTU3MDcwOTEwMywiZXhwIjoxNjAyMzMxNTAzLCJzdWIiOiIyNzgiLCJzY29wZXMiOltdfQ.eKyAGPlS0dBEm5cZa2O_ANZZF1j18o3k_zcBm8kTQlsih9N64pG8PA5Aget9SDs0JnmMVLu1VEmiVnpAzDkM0-rEUfrCI9nIHuMIRWwQC_EqV0k5LAlBOPGJ8E3GxUDeuFtwEPTD9Ih_J9VXaYwEBWOHWG1JeUkurpmImBGD_1oktvwcOBkByGyCMqidGhNimbVnTFJ884QDeA751Yqg7LakNMVZi0k5y4uMNXrQbZLRuzZY9DNArpp9WnsvKTLtBQ3QAvYtNQlI-F3rzY1wVFbyI2vkjSbTV4zACM4zAInyg41ejETL3EcSSzvnYU0H4HE6g694dzbSEw6RvoUBXrS9Q3gexfVAH2Mp1HIkqF0CYD_A8WHaSyjupIr1x_vGr-gCInwqXAq5MJKALrHyHuwWaC7nG1dsFxYoCkBULcZ1UA4fYN6YK64kA3s3jsFPDFiHwxj9aFZVmgpfV9W4CMmtjv0BtCDZ-7SG81Du_byChtaKnwk5J0EF9toh-pPjOCflY7Es8orLYxMxqTtwIviS7ju1cZjm_Om2gGhzIbq7TgRL9VVUis2rgsbbuhtoZbjUBb-Q-RVNkL_YzQPOVFVSsnGeeBqXaMPD11qQ0mNiQ0s-eT1gEt4UaWuuxSx5ra2I0F8JbfI_YJ55_gaWyvBUhFRGoLepJ8jBCDsf8Po"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"serial_no\" :\"FGMMFRZ0000000007\"\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://fgmmdev.com/api/v1/freezer/user/lists",
+              "protocol": "https",
+              "host": ["fgmmdev", "com"],
+              "path": ["api", "v1", "freezer", "user", "lists"]
+            }
+          },
+          "response": []
+        }
+      ],
+      "description": "Van-Sale customer CRUD",
+      "event": [
+        {
+          "listen": "prerequest",
+          "script": {
+            "id": "cd30ccfc-3443-4fc5-b58b-f90df6b9cf95",
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        },
+        {
+          "listen": "test",
+          "script": {
+            "id": "b86cf1f5-b0ba-4596-baa4-8cbe659ccbd3",
+            "type": "text/javascript",
+            "exec": [""]
+          }
+        }
+      ],
+      "protocolProfileBehavior": {}
+    },
+    {
+      "name": "Customer-other",
+      "item": [
+        {
+          "name": "customer return-invoices",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVkZWEyYzcxNjY2ZTU4YjYzNTRmZmVhMjc0MWE0MjhhYjYyZDk5NTk2MmNmNDc2ODQ1NTM0MjY1MWQ3OTc3NmVkMTFmYmZlNTZiZmRhY2ViIn0.eyJhdWQiOiIxIiwianRpIjoiNWRlYTJjNzE2NjZlNThiNjM1NGZmZWEyNzQxYTQyOGFiNjJkOTk1OTYyY2Y0NzY4NDU1MzQyNjUxZDc5Nzc2ZWQxMWZiZmU1NmJmZGFjZWIiLCJpYXQiOjE1NzA3MDkxMDMsIm5iZiI6MTU3MDcwOTEwMywiZXhwIjoxNjAyMzMxNTAzLCJzdWIiOiIyNzgiLCJzY29wZXMiOltdfQ.eKyAGPlS0dBEm5cZa2O_ANZZF1j18o3k_zcBm8kTQlsih9N64pG8PA5Aget9SDs0JnmMVLu1VEmiVnpAzDkM0-rEUfrCI9nIHuMIRWwQC_EqV0k5LAlBOPGJ8E3GxUDeuFtwEPTD9Ih_J9VXaYwEBWOHWG1JeUkurpmImBGD_1oktvwcOBkByGyCMqidGhNimbVnTFJ884QDeA751Yqg7LakNMVZi0k5y4uMNXrQbZLRuzZY9DNArpp9WnsvKTLtBQ3QAvYtNQlI-F3rzY1wVFbyI2vkjSbTV4zACM4zAInyg41ejETL3EcSSzvnYU0H4HE6g694dzbSEw6RvoUBXrS9Q3gexfVAH2Mp1HIkqF0CYD_A8WHaSyjupIr1x_vGr-gCInwqXAq5MJKALrHyHuwWaC7nG1dsFxYoCkBULcZ1UA4fYN6YK64kA3s3jsFPDFiHwxj9aFZVmgpfV9W4CMmtjv0BtCDZ-7SG81Du_byChtaKnwk5J0EF9toh-pPjOCflY7Es8orLYxMxqTtwIviS7ju1cZjm_Om2gGhzIbq7TgRL9VVUis2rgsbbuhtoZbjUBb-Q-RVNkL_YzQPOVFVSsnGeeBqXaMPD11qQ0mNiQ0s-eT1gEt4UaWuuxSx5ra2I0F8JbfI_YJ55_gaWyvBUhFRGoLepJ8jBCDsf8Po"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://fgmmdev.com/api/v1/customer/return/invoices",
+              "protocol": "https",
+              "host": ["fgmmdev", "com"],
+              "path": ["api", "v1", "customer", "return", "invoices"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "clamis",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVkZWEyYzcxNjY2ZTU4YjYzNTRmZmVhMjc0MWE0MjhhYjYyZDk5NTk2MmNmNDc2ODQ1NTM0MjY1MWQ3OTc3NmVkMTFmYmZlNTZiZmRhY2ViIn0.eyJhdWQiOiIxIiwianRpIjoiNWRlYTJjNzE2NjZlNThiNjM1NGZmZWEyNzQxYTQyOGFiNjJkOTk1OTYyY2Y0NzY4NDU1MzQyNjUxZDc5Nzc2ZWQxMWZiZmU1NmJmZGFjZWIiLCJpYXQiOjE1NzA3MDkxMDMsIm5iZiI6MTU3MDcwOTEwMywiZXhwIjoxNjAyMzMxNTAzLCJzdWIiOiIyNzgiLCJzY29wZXMiOltdfQ.eKyAGPlS0dBEm5cZa2O_ANZZF1j18o3k_zcBm8kTQlsih9N64pG8PA5Aget9SDs0JnmMVLu1VEmiVnpAzDkM0-rEUfrCI9nIHuMIRWwQC_EqV0k5LAlBOPGJ8E3GxUDeuFtwEPTD9Ih_J9VXaYwEBWOHWG1JeUkurpmImBGD_1oktvwcOBkByGyCMqidGhNimbVnTFJ884QDeA751Yqg7LakNMVZi0k5y4uMNXrQbZLRuzZY9DNArpp9WnsvKTLtBQ3QAvYtNQlI-F3rzY1wVFbyI2vkjSbTV4zACM4zAInyg41ejETL3EcSSzvnYU0H4HE6g694dzbSEw6RvoUBXrS9Q3gexfVAH2Mp1HIkqF0CYD_A8WHaSyjupIr1x_vGr-gCInwqXAq5MJKALrHyHuwWaC7nG1dsFxYoCkBULcZ1UA4fYN6YK64kA3s3jsFPDFiHwxj9aFZVmgpfV9W4CMmtjv0BtCDZ-7SG81Du_byChtaKnwk5J0EF9toh-pPjOCflY7Es8orLYxMxqTtwIviS7ju1cZjm_Om2gGhzIbq7TgRL9VVUis2rgsbbuhtoZbjUBb-Q-RVNkL_YzQPOVFVSsnGeeBqXaMPD11qQ0mNiQ0s-eT1gEt4UaWuuxSx5ra2I0F8JbfI_YJ55_gaWyvBUhFRGoLepJ8jBCDsf8Po"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://fgmmdev.com/api/v1/claims",
+              "protocol": "https",
+              "host": ["fgmmdev", "com"],
+              "path": ["api", "v1", "claims"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Points Offer",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVkZWEyYzcxNjY2ZTU4YjYzNTRmZmVhMjc0MWE0MjhhYjYyZDk5NTk2MmNmNDc2ODQ1NTM0MjY1MWQ3OTc3NmVkMTFmYmZlNTZiZmRhY2ViIn0.eyJhdWQiOiIxIiwianRpIjoiNWRlYTJjNzE2NjZlNThiNjM1NGZmZWEyNzQxYTQyOGFiNjJkOTk1OTYyY2Y0NzY4NDU1MzQyNjUxZDc5Nzc2ZWQxMWZiZmU1NmJmZGFjZWIiLCJpYXQiOjE1NzA3MDkxMDMsIm5iZiI6MTU3MDcwOTEwMywiZXhwIjoxNjAyMzMxNTAzLCJzdWIiOiIyNzgiLCJzY29wZXMiOltdfQ.eKyAGPlS0dBEm5cZa2O_ANZZF1j18o3k_zcBm8kTQlsih9N64pG8PA5Aget9SDs0JnmMVLu1VEmiVnpAzDkM0-rEUfrCI9nIHuMIRWwQC_EqV0k5LAlBOPGJ8E3GxUDeuFtwEPTD9Ih_J9VXaYwEBWOHWG1JeUkurpmImBGD_1oktvwcOBkByGyCMqidGhNimbVnTFJ884QDeA751Yqg7LakNMVZi0k5y4uMNXrQbZLRuzZY9DNArpp9WnsvKTLtBQ3QAvYtNQlI-F3rzY1wVFbyI2vkjSbTV4zACM4zAInyg41ejETL3EcSSzvnYU0H4HE6g694dzbSEw6RvoUBXrS9Q3gexfVAH2Mp1HIkqF0CYD_A8WHaSyjupIr1x_vGr-gCInwqXAq5MJKALrHyHuwWaC7nG1dsFxYoCkBULcZ1UA4fYN6YK64kA3s3jsFPDFiHwxj9aFZVmgpfV9W4CMmtjv0BtCDZ-7SG81Du_byChtaKnwk5J0EF9toh-pPjOCflY7Es8orLYxMxqTtwIviS7ju1cZjm_Om2gGhzIbq7TgRL9VVUis2rgsbbuhtoZbjUBb-Q-RVNkL_YzQPOVFVSsnGeeBqXaMPD11qQ0mNiQ0s-eT1gEt4UaWuuxSx5ra2I0F8JbfI_YJ55_gaWyvBUhFRGoLepJ8jBCDsf8Po"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://fgmmdev.com/api/v1/customer/point/offers",
+              "protocol": "https",
+              "host": ["fgmmdev", "com"],
+              "path": ["api", "v1", "customer", "point", "offers"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Points history",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVkZWEyYzcxNjY2ZTU4YjYzNTRmZmVhMjc0MWE0MjhhYjYyZDk5NTk2MmNmNDc2ODQ1NTM0MjY1MWQ3OTc3NmVkMTFmYmZlNTZiZmRhY2ViIn0.eyJhdWQiOiIxIiwianRpIjoiNWRlYTJjNzE2NjZlNThiNjM1NGZmZWEyNzQxYTQyOGFiNjJkOTk1OTYyY2Y0NzY4NDU1MzQyNjUxZDc5Nzc2ZWQxMWZiZmU1NmJmZGFjZWIiLCJpYXQiOjE1NzA3MDkxMDMsIm5iZiI6MTU3MDcwOTEwMywiZXhwIjoxNjAyMzMxNTAzLCJzdWIiOiIyNzgiLCJzY29wZXMiOltdfQ.eKyAGPlS0dBEm5cZa2O_ANZZF1j18o3k_zcBm8kTQlsih9N64pG8PA5Aget9SDs0JnmMVLu1VEmiVnpAzDkM0-rEUfrCI9nIHuMIRWwQC_EqV0k5LAlBOPGJ8E3GxUDeuFtwEPTD9Ih_J9VXaYwEBWOHWG1JeUkurpmImBGD_1oktvwcOBkByGyCMqidGhNimbVnTFJ884QDeA751Yqg7LakNMVZi0k5y4uMNXrQbZLRuzZY9DNArpp9WnsvKTLtBQ3QAvYtNQlI-F3rzY1wVFbyI2vkjSbTV4zACM4zAInyg41ejETL3EcSSzvnYU0H4HE6g694dzbSEw6RvoUBXrS9Q3gexfVAH2Mp1HIkqF0CYD_A8WHaSyjupIr1x_vGr-gCInwqXAq5MJKALrHyHuwWaC7nG1dsFxYoCkBULcZ1UA4fYN6YK64kA3s3jsFPDFiHwxj9aFZVmgpfV9W4CMmtjv0BtCDZ-7SG81Du_byChtaKnwk5J0EF9toh-pPjOCflY7Es8orLYxMxqTtwIviS7ju1cZjm_Om2gGhzIbq7TgRL9VVUis2rgsbbuhtoZbjUBb-Q-RVNkL_YzQPOVFVSsnGeeBqXaMPD11qQ0mNiQ0s-eT1gEt4UaWuuxSx5ra2I0F8JbfI_YJ55_gaWyvBUhFRGoLepJ8jBCDsf8Po"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://fgmmdev.com/api/v1/customer/point/history",
+              "protocol": "https",
+              "host": ["fgmmdev", "com"],
+              "path": ["api", "v1", "customer", "point", "history"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Notifications",
+          "request": {
+            "method": "GET",
+            "header": [
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVkZWEyYzcxNjY2ZTU4YjYzNTRmZmVhMjc0MWE0MjhhYjYyZDk5NTk2MmNmNDc2ODQ1NTM0MjY1MWQ3OTc3NmVkMTFmYmZlNTZiZmRhY2ViIn0.eyJhdWQiOiIxIiwianRpIjoiNWRlYTJjNzE2NjZlNThiNjM1NGZmZWEyNzQxYTQyOGFiNjJkOTk1OTYyY2Y0NzY4NDU1MzQyNjUxZDc5Nzc2ZWQxMWZiZmU1NmJmZGFjZWIiLCJpYXQiOjE1NzA3MDkxMDMsIm5iZiI6MTU3MDcwOTEwMywiZXhwIjoxNjAyMzMxNTAzLCJzdWIiOiIyNzgiLCJzY29wZXMiOltdfQ.eKyAGPlS0dBEm5cZa2O_ANZZF1j18o3k_zcBm8kTQlsih9N64pG8PA5Aget9SDs0JnmMVLu1VEmiVnpAzDkM0-rEUfrCI9nIHuMIRWwQC_EqV0k5LAlBOPGJ8E3GxUDeuFtwEPTD9Ih_J9VXaYwEBWOHWG1JeUkurpmImBGD_1oktvwcOBkByGyCMqidGhNimbVnTFJ884QDeA751Yqg7LakNMVZi0k5y4uMNXrQbZLRuzZY9DNArpp9WnsvKTLtBQ3QAvYtNQlI-F3rzY1wVFbyI2vkjSbTV4zACM4zAInyg41ejETL3EcSSzvnYU0H4HE6g694dzbSEw6RvoUBXrS9Q3gexfVAH2Mp1HIkqF0CYD_A8WHaSyjupIr1x_vGr-gCInwqXAq5MJKALrHyHuwWaC7nG1dsFxYoCkBULcZ1UA4fYN6YK64kA3s3jsFPDFiHwxj9aFZVmgpfV9W4CMmtjv0BtCDZ-7SG81Du_byChtaKnwk5J0EF9toh-pPjOCflY7Es8orLYxMxqTtwIviS7ju1cZjm_Om2gGhzIbq7TgRL9VVUis2rgsbbuhtoZbjUBb-Q-RVNkL_YzQPOVFVSsnGeeBqXaMPD11qQ0mNiQ0s-eT1gEt4UaWuuxSx5ra2I0F8JbfI_YJ55_gaWyvBUhFRGoLepJ8jBCDsf8Po"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "url": {
+              "raw": "https://fgmmdev.com/api/v1/customer/notification",
+              "protocol": "https",
+              "host": ["fgmmdev", "com"],
+              "path": ["api", "v1", "customer", "notification"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "change-password",
+          "request": {
+            "method": "PUT",
+            "header": [
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVkZWEyYzcxNjY2ZTU4YjYzNTRmZmVhMjc0MWE0MjhhYjYyZDk5NTk2MmNmNDc2ODQ1NTM0MjY1MWQ3OTc3NmVkMTFmYmZlNTZiZmRhY2ViIn0.eyJhdWQiOiIxIiwianRpIjoiNWRlYTJjNzE2NjZlNThiNjM1NGZmZWEyNzQxYTQyOGFiNjJkOTk1OTYyY2Y0NzY4NDU1MzQyNjUxZDc5Nzc2ZWQxMWZiZmU1NmJmZGFjZWIiLCJpYXQiOjE1NzA3MDkxMDMsIm5iZiI6MTU3MDcwOTEwMywiZXhwIjoxNjAyMzMxNTAzLCJzdWIiOiIyNzgiLCJzY29wZXMiOltdfQ.eKyAGPlS0dBEm5cZa2O_ANZZF1j18o3k_zcBm8kTQlsih9N64pG8PA5Aget9SDs0JnmMVLu1VEmiVnpAzDkM0-rEUfrCI9nIHuMIRWwQC_EqV0k5LAlBOPGJ8E3GxUDeuFtwEPTD9Ih_J9VXaYwEBWOHWG1JeUkurpmImBGD_1oktvwcOBkByGyCMqidGhNimbVnTFJ884QDeA751Yqg7LakNMVZi0k5y4uMNXrQbZLRuzZY9DNArpp9WnsvKTLtBQ3QAvYtNQlI-F3rzY1wVFbyI2vkjSbTV4zACM4zAInyg41ejETL3EcSSzvnYU0H4HE6g694dzbSEw6RvoUBXrS9Q3gexfVAH2Mp1HIkqF0CYD_A8WHaSyjupIr1x_vGr-gCInwqXAq5MJKALrHyHuwWaC7nG1dsFxYoCkBULcZ1UA4fYN6YK64kA3s3jsFPDFiHwxj9aFZVmgpfV9W4CMmtjv0BtCDZ-7SG81Du_byChtaKnwk5J0EF9toh-pPjOCflY7Es8orLYxMxqTtwIviS7ju1cZjm_Om2gGhzIbq7TgRL9VVUis2rgsbbuhtoZbjUBb-Q-RVNkL_YzQPOVFVSsnGeeBqXaMPD11qQ0mNiQ0s-eT1gEt4UaWuuxSx5ra2I0F8JbfI_YJ55_gaWyvBUhFRGoLepJ8jBCDsf8Po"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"current_password\":\"12345678\",\n\t\"password\" : \"12345678\",\n    \"password_confirmation\" : \"12345678\"\n    \n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://fgmmdev.com/api/v1/customer/update-password",
+              "protocol": "https",
+              "host": ["fgmmdev", "com"],
+              "path": ["api", "v1", "customer", "update-password"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "Profile edit",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVkZWEyYzcxNjY2ZTU4YjYzNTRmZmVhMjc0MWE0MjhhYjYyZDk5NTk2MmNmNDc2ODQ1NTM0MjY1MWQ3OTc3NmVkMTFmYmZlNTZiZmRhY2ViIn0.eyJhdWQiOiIxIiwianRpIjoiNWRlYTJjNzE2NjZlNThiNjM1NGZmZWEyNzQxYTQyOGFiNjJkOTk1OTYyY2Y0NzY4NDU1MzQyNjUxZDc5Nzc2ZWQxMWZiZmU1NmJmZGFjZWIiLCJpYXQiOjE1NzA3MDkxMDMsIm5iZiI6MTU3MDcwOTEwMywiZXhwIjoxNjAyMzMxNTAzLCJzdWIiOiIyNzgiLCJzY29wZXMiOltdfQ.eKyAGPlS0dBEm5cZa2O_ANZZF1j18o3k_zcBm8kTQlsih9N64pG8PA5Aget9SDs0JnmMVLu1VEmiVnpAzDkM0-rEUfrCI9nIHuMIRWwQC_EqV0k5LAlBOPGJ8E3GxUDeuFtwEPTD9Ih_J9VXaYwEBWOHWG1JeUkurpmImBGD_1oktvwcOBkByGyCMqidGhNimbVnTFJ884QDeA751Yqg7LakNMVZi0k5y4uMNXrQbZLRuzZY9DNArpp9WnsvKTLtBQ3QAvYtNQlI-F3rzY1wVFbyI2vkjSbTV4zACM4zAInyg41ejETL3EcSSzvnYU0H4HE6g694dzbSEw6RvoUBXrS9Q3gexfVAH2Mp1HIkqF0CYD_A8WHaSyjupIr1x_vGr-gCInwqXAq5MJKALrHyHuwWaC7nG1dsFxYoCkBULcZ1UA4fYN6YK64kA3s3jsFPDFiHwxj9aFZVmgpfV9W4CMmtjv0BtCDZ-7SG81Du_byChtaKnwk5J0EF9toh-pPjOCflY7Es8orLYxMxqTtwIviS7ju1cZjm_Om2gGhzIbq7TgRL9VVUis2rgsbbuhtoZbjUBb-Q-RVNkL_YzQPOVFVSsnGeeBqXaMPD11qQ0mNiQ0s-eT1gEt4UaWuuxSx5ra2I0F8JbfI_YJ55_gaWyvBUhFRGoLepJ8jBCDsf8Po"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "formdata",
+              "formdata": [
+                {
+                  "key": "name",
+                  "value": "Arshad",
+                  "type": "text"
+                },
+                {
+                  "key": "phone",
+                  "value": "4553552661",
+                  "type": "text"
+                },
+                {
+                  "key": "photo",
+                  "type": "file",
+                  "src": "/C:/Users/Tahir/Pictures/barcodes/293256644.gif"
+                }
+              ],
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://fgmmdev.com/api/v1/customer/update-profile",
+              "protocol": "https",
+              "host": ["fgmmdev", "com"],
+              "path": ["api", "v1", "customer", "update-profile"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "create claim",
+          "request": {
+            "method": "POST",
+            "header": [
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjVkZWEyYzcxNjY2ZTU4YjYzNTRmZmVhMjc0MWE0MjhhYjYyZDk5NTk2MmNmNDc2ODQ1NTM0MjY1MWQ3OTc3NmVkMTFmYmZlNTZiZmRhY2ViIn0.eyJhdWQiOiIxIiwianRpIjoiNWRlYTJjNzE2NjZlNThiNjM1NGZmZWEyNzQxYTQyOGFiNjJkOTk1OTYyY2Y0NzY4NDU1MzQyNjUxZDc5Nzc2ZWQxMWZiZmU1NmJmZGFjZWIiLCJpYXQiOjE1NzA3MDkxMDMsIm5iZiI6MTU3MDcwOTEwMywiZXhwIjoxNjAyMzMxNTAzLCJzdWIiOiIyNzgiLCJzY29wZXMiOltdfQ.eKyAGPlS0dBEm5cZa2O_ANZZF1j18o3k_zcBm8kTQlsih9N64pG8PA5Aget9SDs0JnmMVLu1VEmiVnpAzDkM0-rEUfrCI9nIHuMIRWwQC_EqV0k5LAlBOPGJ8E3GxUDeuFtwEPTD9Ih_J9VXaYwEBWOHWG1JeUkurpmImBGD_1oktvwcOBkByGyCMqidGhNimbVnTFJ884QDeA751Yqg7LakNMVZi0k5y4uMNXrQbZLRuzZY9DNArpp9WnsvKTLtBQ3QAvYtNQlI-F3rzY1wVFbyI2vkjSbTV4zACM4zAInyg41ejETL3EcSSzvnYU0H4HE6g694dzbSEw6RvoUBXrS9Q3gexfVAH2Mp1HIkqF0CYD_A8WHaSyjupIr1x_vGr-gCInwqXAq5MJKALrHyHuwWaC7nG1dsFxYoCkBULcZ1UA4fYN6YK64kA3s3jsFPDFiHwxj9aFZVmgpfV9W4CMmtjv0BtCDZ-7SG81Du_byChtaKnwk5J0EF9toh-pPjOCflY7Es8orLYxMxqTtwIviS7ju1cZjm_Om2gGhzIbq7TgRL9VVUis2rgsbbuhtoZbjUBb-Q-RVNkL_YzQPOVFVSsnGeeBqXaMPD11qQ0mNiQ0s-eT1gEt4UaWuuxSx5ra2I0F8JbfI_YJ55_gaWyvBUhFRGoLepJ8jBCDsf8Po"
+              },
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\r\n    \"subject\": \"Sbj Test Api\",\r\n    \"message\": \"Freezer detail goes here\",\r\n    \"serial_no\": \"FGMMFRZ0000000006\",\r\n    \"priority\": \"low\"\r\n    \r\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://fgmmdev.com/api/v1/claim/create",
+              "protocol": "https",
+              "host": ["fgmmdev", "com"],
+              "path": ["api", "v1", "claim", "create"]
+            }
+          },
+          "response": []
+        },
+        {
+          "name": "user report",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "type": "text",
+                "value": "application/json",
+                "disabled": true
+              },
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjE3ODkxNmIzMzU4N2U0MDc3NmRlOGIzMTVjOWQyYWVmNzQyYjM4NDQyYTI2YTVhOTRhODg1ZWExMzYxMTM2NWYxZGE4ZjRlY2VkYTYwNWM0In0.eyJhdWQiOiIxIiwianRpIjoiMTc4OTE2YjMzNTg3ZTQwNzc2ZGU4YjMxNWM5ZDJhZWY3NDJiMzg0NDJhMjZhNWE5NGE4ODVlYTEzNjExMzY1ZjFkYThmNGVjZWRhNjA1YzQiLCJpYXQiOjE1NzA4ODMzNDgsIm5iZiI6MTU3MDg4MzM0OCwiZXhwIjoxNjAyNTA1NzQ4LCJzdWIiOiIyNzgiLCJzY29wZXMiOltdfQ.Yo16dgjLHYGcY8PdnDdfbkuld2-BFzl2wFx8J9fXPJgYKdcGdpkJ6vGZDfb3YH3evi6JeQ9Y7Efa7he6yqjQTBkm50V8Ar-mVBLAQPLZtLYnQ-VuJVjTzpi5idI-xoj4Mu30Rde5F-pwVwuBAXfbipC0zhlVnTnSnqtnSPgtn4uju4buGXINzm2y36Z7OBID8rRgf8sIKZ3wdX1zWAy46wDVm7-m7PXc1Iod6WE5_FOnGXnXGtryx9fcn8x0Nv1SYWphkVZA1g6s4KhDTGBQhQFZjcvs65UAJxAi4zGjoRcCfck3tD-IwGTD_JII5vdX5qgJniiOI6Kg_Fy02QyNrSP1Yc_uTadnabopNmzqbkL_RtkamvQMzMURgZlXEpcrh336q70bWNJ5QYShiOHASI7bNE486W6MaxQPGMGF5JmsY-vkbWVGCUHLoJDpN5eoWPiGq_aNdDt8uhmSloLBaTOOCqN1HfhmU5EJXPOXAe6kTNL5-7N1NrgC0aQX9yy8cwhpyKbaay92WTsGzaCBPdji3lW5BNcXk6yVjh1HKUmrd6ym_3wZVY2YqEqtIvFKgNKcA6mFnGnD6rtirnW-BpRENZQaMiRgVd57BKSbECNF8JDrDCNCBY8U5d9Uc8y2Ld88mJVkOAO4Ox8U30B3FRCEFdCz_tN8b51OUFqCHtc"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": ""
+            },
+            "url": {
+              "raw": "https://fgmmdev.com/api/v1/user/reports?",
+              "protocol": "https",
+              "host": ["fgmmdev", "com"],
+              "path": ["api", "v1", "user", "reports"],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "amazon",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "product types"
+          },
+          "response": []
+        },
+        {
+          "name": "report detail",
+          "protocolProfileBehavior": {
+            "disableBodyPruning": true
+          },
+          "request": {
+            "auth": {
+              "type": "noauth"
+            },
+            "method": "GET",
+            "header": [
+              {
+                "key": "Content-Type",
+                "name": "Content-Type",
+                "value": "application/json",
+                "type": "text"
+              },
+              {
+                "key": "Authorization",
+                "type": "text",
+                "value": "Bearer eyJ0eXAiOiJKV1QiLCJhbGciOiJSUzI1NiIsImp0aSI6IjE3ODkxNmIzMzU4N2U0MDc3NmRlOGIzMTVjOWQyYWVmNzQyYjM4NDQyYTI2YTVhOTRhODg1ZWExMzYxMTM2NWYxZGE4ZjRlY2VkYTYwNWM0In0.eyJhdWQiOiIxIiwianRpIjoiMTc4OTE2YjMzNTg3ZTQwNzc2ZGU4YjMxNWM5ZDJhZWY3NDJiMzg0NDJhMjZhNWE5NGE4ODVlYTEzNjExMzY1ZjFkYThmNGVjZWRhNjA1YzQiLCJpYXQiOjE1NzA4ODMzNDgsIm5iZiI6MTU3MDg4MzM0OCwiZXhwIjoxNjAyNTA1NzQ4LCJzdWIiOiIyNzgiLCJzY29wZXMiOltdfQ.Yo16dgjLHYGcY8PdnDdfbkuld2-BFzl2wFx8J9fXPJgYKdcGdpkJ6vGZDfb3YH3evi6JeQ9Y7Efa7he6yqjQTBkm50V8Ar-mVBLAQPLZtLYnQ-VuJVjTzpi5idI-xoj4Mu30Rde5F-pwVwuBAXfbipC0zhlVnTnSnqtnSPgtn4uju4buGXINzm2y36Z7OBID8rRgf8sIKZ3wdX1zWAy46wDVm7-m7PXc1Iod6WE5_FOnGXnXGtryx9fcn8x0Nv1SYWphkVZA1g6s4KhDTGBQhQFZjcvs65UAJxAi4zGjoRcCfck3tD-IwGTD_JII5vdX5qgJniiOI6Kg_Fy02QyNrSP1Yc_uTadnabopNmzqbkL_RtkamvQMzMURgZlXEpcrh336q70bWNJ5QYShiOHASI7bNE486W6MaxQPGMGF5JmsY-vkbWVGCUHLoJDpN5eoWPiGq_aNdDt8uhmSloLBaTOOCqN1HfhmU5EJXPOXAe6kTNL5-7N1NrgC0aQX9yy8cwhpyKbaay92WTsGzaCBPdji3lW5BNcXk6yVjh1HKUmrd6ym_3wZVY2YqEqtIvFKgNKcA6mFnGnD6rtirnW-BpRENZQaMiRgVd57BKSbECNF8JDrDCNCBY8U5d9Uc8y2Ld88mJVkOAO4Ox8U30B3FRCEFdCz_tN8b51OUFqCHtc"
+              }
+            ],
+            "body": {
+              "mode": "raw",
+              "raw": "{\n\t\"id\": 2\n}",
+              "options": {
+                "raw": {
+                  "language": "json"
+                }
+              }
+            },
+            "url": {
+              "raw": "https://fgmmdev.com/api/v1/report/detail?",
+              "protocol": "https",
+              "host": ["fgmmdev", "com"],
+              "path": ["api", "v1", "report", "detail"],
+              "query": [
+                {
+                  "key": "search",
+                  "value": "amazon",
+                  "disabled": true
+                }
+              ]
+            },
+            "description": "product types"
+          },
+          "response": []
+        }
+      ],
+      "protocolProfileBehavior": {}
+    }
+  ],
+  "protocolProfileBehavior": {}
+}

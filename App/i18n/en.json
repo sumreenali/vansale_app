@@ -1,0 +1,263 @@
+{
+  "appTitle": "Vansale",
+  "loginScreen": {
+    "title": "Login Here!",
+    "btnText": "Submit",
+    "loginFailed": "Access Denied",
+    "loginSuccess": "Welcome to FGMM Dev App"
+  },
+  "homeScreen": {
+    "homeTitle": "Home",
+    "aboutTitle": "About",
+    "invoiceTitle": "Invoices",
+    "balanceTitle": "Points",
+    "offerTitle": "Offers",
+    "freezerTitle": "Freezers",
+    "vanSaleTitle": "Customers",
+    "reportTitle": "Reports",
+    "profileTitle": "Profile",
+    "aboutApp": "About App",
+    "logout": "Logout",
+
+
+    "saleTitle": "Sales",
+    "purchasingTitle": "Purchase",
+    "stockTitle": "Stock",
+    "customerTitle": "Customers",
+    "pointsTitle": "Points"
+  },
+  "aboutScreen": {
+    "versionText": "Version 1.0"
+  },
+
+  "invoiceScreen": {
+    "purchase": "Sales Invoices",
+    "return": "Sales Return Invoices",
+    "invoiceId": "Invoice Id",
+    "productId": "Id",
+    "productPrice": "Price",
+    "quantity": "Qty",
+    "itemReturn": "Item Return",
+    "category": "Category",
+    "itemType": "Item Type",
+    "itemCode": "Code",
+    "itemName": "Name",
+    "itemGroupCode": "Item Group Code",
+    "itemGroupName": "Item Group Name",
+    "cancelledStatus": "Cancelled",
+    "invoiceReference": "Invoice Ref",
+    "vanSales": "Van Sales",
+    "totalAmount": "Total Amount",
+    "date": "Date",
+    "vansale": "Van Sale",
+    "TotalAmount": "Total Amount",
+    "TotalPoint": "Total Point"
+  },
+
+  "balanceScreen": {
+    "pointBalance": "Point Balance",
+    "moneyBalance": "Amount Balance",
+    "quantutyBalance": "Quantity Balance",
+    "balanceDataName": "Name",
+    "balanceDataCode": "Code",
+    "balanceDataQty": "Quantity",
+    "product": "Product"
+  },
+
+  "offerScreen": {
+    "title": "Offer",
+    "offers": "Offers",
+    "pointHistory": "Points History",
+    "id": "Id",
+    "targetGroup": "Target Group",
+    "couponCode": "Coupon Code",
+    "date": "Date",
+    "expiry": "Expiry",
+    "points": "Points",
+    "rate": "Rate",
+    "amount": "Amount",
+    "redeemed": "Redeemed",
+    "noData": "No Data Found!",
+    "name": "Name",
+    "description": "Description",
+    "product": "Product",
+    "quantity": "Quantity",
+    "action": "Action"
+  },
+
+  "freezerScreen": {
+    "customerTitle": "FREEZERS",
+    "serialTitle": "SERIAL",
+    "serialNumber": "Serial No",
+    "claimTitle": "CLAIM",
+    "freezerUserId": "Freezer User Id",
+    "physicallyRecieved": "Physically Recieved",
+    "createdBy": "Created By",
+    "dateTime": "Date & Time",
+    "user": "User",
+    "quantity": "Quantity",
+    "id": "Id",
+    "claim": "Claim",
+    "ticketId": "Ticket Id",
+    "subject": "Subject",
+    "message": "Message",
+    "status": "Status",
+    "lastUpdate": "Last Update",
+    "date": "Date",
+    "emptySerialNumber": "Serial Number can't be empty",
+    "groupCode": "Group Code",
+    "selectSerialNumber": "Select serial number",
+    "claimFreezer": "Claim Freezer",
+    "addClaim": "Add claim"
+  },
+
+  "vanSaleScreen": {
+    "headerTitle": "Van Sale Listing",
+    "dataName": "Name",
+    "dataEmail": "Email",
+    "dataPhone": "Phone",
+    "dataCode": "Code",
+    "dataAddress": "Address",
+    "id": "Id",
+    "totalMoney": "Total Money",
+    "totalPoint": "Total Point",
+    "totalQty": "Total Quantity",
+    "customer" : "Customers List",
+    "dataDate" : "Date",
+    "RedeemPoint" : "Redeem",
+    "Action" : "Action",
+    "RequestRedeempoint" : "Request Redeem Point",
+
+
+    "ID": "ID",
+    "Select" : "Select",
+    "Points" : "Points",
+    "Rate": "Rate",
+    "Amount": "Amount",
+    "InvoiceRef" : "Invoice Refrence",
+    "Date" : "Date",
+    "requestRedeem" : "Create redeem Request"
+
+
+
+
+
+
+
+  },
+
+  "appNavigation": {
+    "statusOnline": "Online",
+    "statusOffline": "Offline"
+  },
+
+  "reportScreen": {
+    "exportBtnText": "Export Report",
+    "emailtBtnText": "Email Report",
+    "title": "Reports",
+    "productName": "Name",
+    "productCode": "Code",
+    "PointsOffer": "Points Offer",
+    "TopProductsCustomers": "Top Products Cust."
+  },
+
+  "appConfig": {
+    "toogleLocale": "Change Language"
+  },
+
+  "common": {
+    "failed": "Redeem request is failed, please try again",
+    "ok": "OK!",
+    "cancel": "Cancel",
+    "back": "Back",
+    "seen": "seen",
+    "unseen": "unseen",
+    "noData": "No Data Found!",
+    "loader": "Please wait while Loading...",
+    "permission": "Language Permission",
+    "edit": "Edit",
+    "save": "Save",
+    "localeToggle": "Are You Sure you wanna change language ?",
+    "resetPasswordSuccess": "Password has been successfully updated!",
+    "updateProfile": "profile updated successfully!",
+    "error": "something went wrong!",
+    "upload": "Choose image",
+    "notFound": "Data not found.",
+    "offline":"Sorry you are offline.",
+    "claimSend":"claim successfully submitted.",
+    "passwordLengthError": "Invalid password, minimum length 8 required.",
+    "changePassword": "Change Password"
+  },
+  "profile": {
+    "firstName" : "First Name",
+    "middleName" : "Middle Name",
+    "lastName" : "Last Name",
+    "name": "Name",
+    "email": "Username",
+    "phone": "Phone",
+    "profileTitle": "User Profile",
+    "oldPassword": "Old Password",
+    "newPassword": "New Password",
+    "confirmPassword": "Confirm Password",
+    "resetPassword": "Change Password",
+    "region": "region",
+    "id": "id",
+    "latitude": "latitude",
+    "longitude": "longitude",
+    "state": "state",
+    "country": "country",
+    "regionTitle": "Regions"
+  },
+  "errors": {
+    "invalidEmail": "Invalid email address.",
+    "imgExceeded" : "Please choose less than 2 MB file!"
+  },
+  "datePicker": {
+    "from": "From Date",
+    "to": "To Date",
+    "filter": "Filter",
+    "clearFilter": "Clear Filter"
+  },
+  "PurchaseScreen": {
+    "purchase": "Purchase Invoices",
+    "return": "Return Invoices",
+    "invoiceId": "Invoice Id",
+    "productId": "Id",
+    "productPrice": "Price",
+    "quantity": "Qty",
+    "itemReturn": "Item Return",
+    "category": "Category",
+    "itemType": "Item Type",
+    "itemCode": "Item Code",
+    "itemName": "Name",
+    "itemGroupCode": "Item Group Code",
+    "itemGroupName": "Item Group Name",
+    "cancelledStatus": "Cancelled",
+    "invoiceReference": "Invoice Reference",
+    "vanSales": "Van Sales",
+    "totalAmount": "Total Amount",
+    "date": "Date",
+    "vansale": "Van Sale",
+    "TotalAmount": "Total Amount",
+    "TotalPoint": "Total Point",
+    "sales" : "Vansale Purchase"
+
+  },
+  "stockScreen" :{
+    "id"  : " Stock id",
+    "code" : "code",
+    "quantity" : "quantity",
+    "stockList" : "Stock List"
+  },
+
+  "pointScreen" :{
+    "redeemRequest"  : "Redeem Request",
+    "generateRequest" : "Generate Request",
+    "quantity" : "quantity",
+    "invoiceReference"  : "Invoice Refrence",
+    "point" : "Point",
+    "rate" : "Rate",
+    "amount" : "Amount",
+    "redeemed" : "Redeemed"
+  }
+}

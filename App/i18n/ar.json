@@ -1,0 +1,259 @@
+{
+  "appTitle": "Vansale",
+  "loginScreen": {
+    "title": "بيانات تسجيل الدخول",
+    "btnText": "تسجيل",
+    "loginFailed": "تعذر الوصول ,خطأ في بيانات التسجيل",
+    "loginSuccess": "مرحبا بك في تطبيق FGMM"
+  },
+  "homeScreen": {
+    "homeTitle": "الصفحة الرئيسية",
+    "aboutTitle": "معلومات",
+    "invoiceTitle": "الفواتير",
+    "balanceTitle": "النقاط",
+    "offerTitle": "العروض",
+    "freezerTitle": "الفريزرات",
+    "vanSaleTitle": "Customers",
+    "reportTitle": "التقارير",
+    "profileTitle": "الملف الشخصي",
+    "aboutApp": "معلومات التطبيق",
+    "logout":"تسجيل الخروج",
+
+
+    "saleTitle": "Sales",
+    "purchasingTitle": "Purchase",
+    "stockTitle": "Stock",
+    "customerTitle": "Customers",
+    "pointsTitle": "Points"
+
+
+  },
+  "aboutScreen": {
+    "versionText": "الأصدار 1.0"
+  },
+  "invoiceScreen": {
+    "purchase": "Sales Invoices",
+    "return": "Sales Return Invoices",
+    "invoiceId": "تسلسل الفاتورة",
+    "productId": "تسلسل المنتج",
+    "productPrice": "السعر",
+    "quantity": "الكمية",
+    "itemReturn": "المنتج المرجع",
+    "category": "الفئة",
+    "itemType": "النوع",
+    "itemCode": "الكود",
+    "itemName": "الأسم",
+    "itemGroupCode": "كود المجموعة",
+    "itemGroupName": "أسم المجموعة",
+    "cancelledStatus": "ملغى",
+    "invoiceReference": "مرجع الفاتورة",
+    "vanSales": "فان سيل",
+    "totalAmount": "المجموع",
+    "date": "التاريخ",
+    "vansale": "فان سيل",
+    "TotalAmount": "المجموع",
+    "TotalPoint": "مجموع النقاط"
+  },
+  "balanceScreen": {
+    "pointBalance": "حساب النقاط",
+    "moneyBalance": "حساب المبلغ",
+    "quantutyBalance": "حساب النقاط",
+    "balanceDataName": "الأسم",
+    "balanceDataCode": "الكود",
+    "balanceDataQty": "الكمية",
+    "product": "المنتج"
+  },
+  "offerScreen": {
+    "title": "العرض",
+    "offers": "العروض",
+    "pointHistory": "معاملات النقاط",
+    "id": "التسلسل",
+    "targetGroup": "المجموعة المستهدفة",
+    "couponCode": "كود الكوبون",
+    "date": "التاريخ",
+    "expiry": "انقضاء",
+    "points": "النقاط",
+    "rate": "النسبة",
+    "amount": "الكمية",
+    "redeemed": "مستبدلة",
+    "noData": "لاتوجد بيانات!",
+    "name": "الأسم",
+    "description": "الوصف",
+    "product": "المنتج",
+    "quantity": "الكمية",
+    "action": "اجراء"
+  },
+  "freezerScreen": {
+    "customerTitle": "الفريزرات",
+    "serialTitle": "عنوان الرقم السلري",
+    "serialNumber": "الرقم السري",
+    "claimTitle": "عنوان الشكوى",
+    "freezerUserId": "كود مستخدم الفريزر",
+    "physicallyRecieved": "أستلمت",
+    "createdBy": "أنشئ بواسطة",
+    "dateTime": "التاريخ والوقت",
+    "user": "المستخدم",
+    "quantity": "الكمية",
+    "id": "التسلسل",
+    "claim": "شكوى",
+    "ticketId": "تسلسل ",
+    "subject": "الموضوع",
+    "message": "الرسالة",
+    "status": "الحالة",
+    "lastUpdate": "أخر تحديث",
+    "date": "التاريخ",
+    "emptySerialNumber": "يرجى ادخال الرقم السري",
+    "groupCode": "كود المجموعة",
+    "selectSerialNumber": "أختر الفريزر",
+    "claimFreezer": "شكوى",
+    "addClaim": "اضافة شكوى"
+  },
+  "vanSaleScreen": {
+    "headerTitle": "قائمة الفان سيل",
+    "dataName": "الأسم",
+    "dataEmail": "الأيميل",
+    "dataPhone": "التلفون",
+    "dataCode": "الكود",
+    "dataAddress": "العنوان",
+    "id": "التسلسل",
+    "totalMoney": "المبلغ الكلي",
+    "totalPoint": "مجموع النقاط",
+    "totalQty": "مجموع الكميات",
+    "customer" : "Customers List",
+    "dataDate" : "Date",
+    "RedeemPoint" : "Redeem",
+    "Action" : "Action",
+    "RequestRedeempoint" : "Request Redeem Point",
+
+
+
+    "ID": "ID",
+    "Select" : "Select",
+    "Points" : "Points",
+    "Rate": "Rate",
+    "Amount": "Amount",
+    "InvoiceRef" : "Invoice Refrence",
+    "Date" : "Date",
+    "requestRedeem" : "Create redeem Request"
+
+
+
+
+
+    
+
+  },
+  "appNavigation": {
+    "statusOnline": "متصل",
+    "statusOffline": "غير متصل"
+  },
+  "reportScreen": {
+    "exportBtnText": "تصدير التقرير",
+    "emailtBtnText": "ارسال التقرير",
+    "title": "التقارير",
+    "productName": "الأسم",
+    "productCode": "الكود",
+    "PointsOffer": "عرض النقاط",
+    "TopProductsCustomers": "المنتجات المفضلة"
+  },
+  "appConfig": {
+    "toogleLocale": "تغيير اللغة"
+  },
+  "common": {
+    "failed": "Redeem request is failed, please try again",
+    "ok": "موافق!",
+    "cancel": "الغاء",
+    "back": "رجوع",
+    "seen": "مرئي",
+    "unseen": "غير مرئي",
+    "noData": "لاتوجد بيانات!",
+    "loader": "يرجى الأنتظار أثاء التحميل...",
+    "permission": "أذن تغيير اللغة",
+    "edit": "تعديل",
+    "save": "حفظ",
+    "localeToggle": "هل انت تريد تغيير اللغة ؟",
+    "resetPasswordSuccess": "تم تحديث كلمة المرور بنجاح!",
+    "updateProfile": "تم تحديث بيانات الملف الشخصي بنجاح!",
+    "error": "حدث خطأ!",
+    "upload": "أختر الصورة",
+    "notFound": "لاتوجد بيانات.",
+    "offline": "غير متصل بالشبكة.",
+    "claimSend": "تم ارسال الشكوى.",
+    "passwordLengthError": "خطأ, كلمة المرور يجب ان تحتوي على الأقل ثمان حروف",
+    "changePassword": "تغيير كلمة المرور"
+  },
+  "profile": {
+    "firstName" : "First Name",
+
+    "middleName" : "Middle Name",
+    "lastName" : "Last Name",
+
+    "name": "الأسم",
+    "email": "أسم المستخدم",
+    "phone": "رقم التافون",
+    "profileTitle": "ملف المستخدم الشخصي",
+    "oldPassword": "كلمة المرور القديمة",
+    "newPassword": "كلمة المرور الجديدة",
+    "confirmPassword": "تأكيد كلمة المرور",
+    "resetPassword": "تغيير كلمة المرور",
+    "region": "المنطقة",
+    "id": "التسلسل",
+    "latitude": "خط العرض",
+    "longitude": "خط الطول",
+    "state": "المحافظة",
+    "country": "البلد",
+    "regionTitle": "المناطق"
+  },
+  "errors": {
+    "invalidEmail": "خطأ في البريد الألكتروني.",
+    "imgExceeded": "أختر ملف أقل من 2 ميغا!"
+  },
+  "datePicker": {
+    "from": "من",
+    "to": "الى",
+    "filter": "تصفية",
+    "clearFilter": "الغاء التصفية"
+  },
+  "PurchaseScreen": {
+    "purchase": "Purchase Invoices",
+    "return": "Return Invoices",
+    "invoiceId": "Invoice Id",
+    "productId": "Id",
+    "productPrice": "Price",
+    "quantity": "Qty",
+    "itemReturn": "Item Return",
+    "category": "Category",
+    "itemType": "Item Type",
+    "itemCode": "Item Code",
+    "itemName": "Name",
+    "itemGroupCode": "Item Group Code",
+    "itemGroupName": "Item Group Name",
+    "cancelledStatus": "Cancelled",
+    "invoiceReference": "Invoice Reference",
+    "vanSales": "Van Sales",
+    "totalAmount": "Total Amount",
+    "date": "Date",
+    "vansale": "Van Sale",
+    "TotalAmount": "Total Amount",
+    "TotalPoint": "Total Point",
+    "sales" : "Vansale Purchase"
+
+  },
+  "stockScreen" :{
+    "id"  : " Stock id",
+    "code" : "code",
+    "quantity" : "quantity",
+    "stockList" : "Stock List"
+  },
+
+  "pointScreen" :{
+    "redeemRequest"  : "Redeem Request",
+    "generateRequest" : "Generate Request",
+    "quantity" : "quantity",
+    "invoiceReference"  : "Invoice Refrence",
+    "point" : "Point",
+    "rate" : "Rate",
+    "amount" : "Amount",
+    "redeemed" : "Redeemed"
+  }
+}
