@@ -26,7 +26,7 @@
     "@react-native-community/async-storage": "^1.6.2",
     "@react-native-community/netinfo": "^4.4.0",
     "apisauce": "1.0.3",
-    "axios": "^0.19.2",
+    "axios": "^0.21.1",
     "babel-plugin-ignite-ignore-reactotron": "0.3.0",
     "babel-preset-env": "1.6.1",
     "babel-preset-react-native": "4.0.1",
